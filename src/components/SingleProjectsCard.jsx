@@ -5,7 +5,7 @@ const SingleProjectsCard = ({ project }) => {
   //   const { tools } = project;
   return (
     <section className="body-font">
-      <div className="container px-5 py-14 mx-auto">
+      <div className="container mx-auto mt-10">
         <div className="flex flex-wrap -m-4">
           <div className="p-4">
             <div className="bg-gray-100 p-6 rounded-lg">
@@ -23,7 +23,7 @@ const SingleProjectsCard = ({ project }) => {
               </p>
               <div className="flex items-center justify-center mt-5">
                 <Link to={`/details/${id}`}>
-                  <button className="font-medium text-white transition duration-300 bg-black rounded-md hover:text-black hover:bg-green-600 px-3 py-3">
+                  <button className="text-black hover:bg-white hover:border bg-amber-300 border border-gray-300 font-medium transition duration-300 rounded-md px-3 py-3">
                     Project Details
                   </button>
                 </Link>

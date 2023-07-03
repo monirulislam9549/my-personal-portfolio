@@ -1,45 +1,37 @@
+import { BsGithub, BsLinkedin, BsTelephoneFill } from "react-icons/bs";
+import { MdEmail, MdLocationOn } from "react-icons/md";
 const Contact = () => {
   return (
-    <section className="text-gray-600 body-font relative">
-      <h1 className="text-center text-3xl font-bold">Contact Me</h1>
-      <div className="container px-5 py-14 mx-auto flex sm:flex-nowrap flex-wrap">
-        <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-          <iframe
-            width="100%"
-            height="100%"
-            className="absolute inset-0"
-            title="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1634.569366712022!2d91.86904129798839!3d22.571626821210607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ad2b2c939e19fd%3A0xf64ca46572ffd75a!2sAbdullahpur%20Government%20Primary%20School!5e1!3m2!1sen!2sbd!4v1688374051133!5m2!1sen!2sbd"
-            style={{ border: 0 }}
-          ></iframe>
-          <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md">
-            <div className="lg:w-1/2 px-6">
-              <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
-                ADDRESS
-              </h2>
-              <p className="mt-1">Chittagong,Bangladesh.</p>
-            </div>
-            <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
-              <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
-                EMAIL
-              </h2>
-              <a className="text-indigo-500 leading-relaxed">
-                monirulislam9549@gmail.com
-              </a>
-              <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
-                PHONE
-              </h2>
-              <p className="leading-relaxed">+880 1889 182663</p>
-            </div>
+    <section>
+      <div className="bg-amber-50 md:py-8 px-5 mx-auto flex sm:flex-nowrap flex-wrap mt-8 justify-center gap-20">
+        <div className="rounded-md space-y-4">
+          <div className="text-center space-y-4">
+            <h1 className="text-3xl font-bold mb-4">Contact Information</h1>
+            <p className="text-lg flex justify-center items-center">
+              <MdEmail className="mr-2"></MdEmail>
+              Email: monirulislam9549@gmail.com
+            </p>
+            <p className="text-lg flex justify-center items-center">
+              <BsTelephoneFill className="mr-2"></BsTelephoneFill>
+              Phone: +88 01889 182663
+            </p>
+            <p className="text-lg flex justify-center items-center">
+              <MdLocationOn className="mr-2 text-2xl"></MdLocationOn>
+              Chittagong, Bangladesh
+            </p>
+          </div>
+          <div className="flex text-3xl justify-center mt-2">
+            <a href="https://github.com/monirulislam9549">
+              <BsGithub></BsGithub>
+            </a>
+            <a className="ml-2" href="">
+              <BsLinkedin></BsLinkedin>
+            </a>
           </div>
         </div>
-        <div className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-          <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">
-            Feedback
-          </h2>
-          <p className="leading-relaxed mb-5 text-gray-600">
-            Post-ironic portland shabby chic echo park, banjo fashion axe
-          </p>
+
+        <div className="md:w-1/2 flex flex-col w-full mt-8 md:mt-0">
+          <h2 className="text-3xl font-bold mb-4">Message Me</h2>
 
           <form action="https://formspree.io/f/mjvqbdpk" method="POST">
             <div className="relative mb-4">
@@ -85,6 +77,7 @@ const Contact = () => {
                 rows={10}
                 autoComplete="off"
                 required
+                placeholder="Your Message"
                 id="message"
                 name="message"
                 className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
@@ -92,15 +85,10 @@ const Contact = () => {
             </div>
             <input
               type="submit"
-              value="Send"
-              className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+              value="Send Message"
+              className="text-black hover:bg-white hover:border font-medium bg-amber-300 border border-gray-300 py-2 px-6 focus:outline-none  rounded text-lg"
             />
           </form>
-
-          <p className="text-xs text-gray-500 mt-3">
-            Chicharrones blog helvetica normcore iceland tousled brook viral
-            artisan.
-          </p>
         </div>
       </div>
     </section>
