@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "projectName": "Petite Cuisine",
+    "images": "https://i.ibb.co/8dkzb7V/Screenshot-307.png",
+    "tools": ["Mongodb", "Express", "React", "Node"],
+    "githubClient": "https://github.com/monirulislam9549/chef-recipe-client",
+    "githubServer": "https://github.com/monirulislam9549/chef-recipe-server",
+    "liveLink": "https://chef-recipe-hunting-64b73.web.app/",
+    "projectDescription": "Users must log  in to view detailed content,seamlessly  navigating to the login page when not logged in.Dynamic presentation of chef profiles,recipes, and culinary information using JSON data.Enhanced aesthetics with Tailwind CSS and DaisyUI, offering pre-built components for a visually appealing and responsive user interface.",
+    "projectImages": [
+      " https://i.ibb.co/q16xBYL/Screenshot-309.png",
+      " https://i.ibb.co/0jZZmWH/Screenshot-308.png",
+      " https://i.ibb.co/RCnZNdX/Screenshot-294.png"
+    ]
+  },
+  {
+    "id": 2,
+    "projectName": "Toy Car",
+    "images": "https://i.ibb.co/GMZFh1w/Screenshot-311.png",
+    "tools": ["Mongodb", "Express", "React", "Node"],
+    "githubClient": "https://github.com/monirulislam9549/toy-car-client",
+    "githubServer": "https://github.com/monirulislam9549/toy-car-server",
+    "liveLink": "https://toy-car-2c2bb.web.app/",
+    "projectDescription": "Easily explore toy cars by filtering them from server side. Firebase authentication ensures safe registration and login.React, Express, Node, MongoDB provide smooth data management for seamless user experience.",
+    "projectImages": [
+      "https://i.ibb.co/PwJvDCg/Screenshot-315.png",
+      "https://i.ibb.co/z2JvpCk/Screenshot-314.png",
+      "https://i.ibb.co/WzB3pzx/Screenshot-313.png",
+      "https://i.ibb.co/6b4TtRD/Screenshot-312.png",
+      "https://i.ibb.co/j4LF6Zp/Screenshot-310.png"
+    ]
+  },
+  {
+    "id": 3,
+    "projectName": "Camp WonderLand",
+    "images": "https://i.ibb.co/Ws6XgFR/Screenshot-316.png",
+    "tools": ["Mongodb", "Express", "React", "Node"],
+    "githubClient": "https://github.com/monirulislam9549/summer-camp-client",
+    "githubServer": "https://github.com/monirulislam9549/summer-camp-server",
+    "liveLink": "https://summer-school-68c9d.web.app/",
+    "projectDescription": "Safe access through firebase authentication order placements, and secure online payments with stripe integration.Consists of three dashboards which is play different role for instructor, admin and students.",
+    "projectImages": [
+      "https://i.ibb.co/sRrSk6Q/Screenshot-318.png",
+      "https://i.ibb.co/cFMXgqT/Screenshot-317.png"
+    ]
+  }
+]
