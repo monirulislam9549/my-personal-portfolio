@@ -22,17 +22,18 @@ const Banner = () => {
               Jr. Web Developer
             </h2>
           </div>
-          <p className="text-justify">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-            praesentium nobis error, eius reiciendis quaerat laborum porro
-            assumenda? Temporibus, rem doloribus accusantium, ipsam, atque dicta
-            fugit eaque voluptatem recusandae sequi veritatis illo velit minima
-            consequuntur aliquid nobis debitis ullam itaque error vitae alias
-            ratione sit tempora quasi. Hic, quos laborum?
+          <p className="text-justify text-2xl">
+            Hello, I am Monirul Islam, a dedicated junior web developer with a
+            passion for crafting captivating and user-centric websites. My
+            journey in the world of web development has equipped me with a
+            strong foundation in front-end technologies and MERN stack
+            development, and I consistently strive to infuse creativity and
+            functionality into every project.
           </p>
           <a
             className="text-black hover:bg-white hover:border font-medium bg-amber-300 border border-gray-300 w-full md:w-48 flex items-center justify-center px-3 py-3  transition duration-300  rounded-md hover:text-black "
-            href="/public/myResume.pdf"
+            href="myResume.pdf"
+            download="myResume.pdf"
           >
             DownLoad Resume
             <BsDownload className="ml-2"></BsDownload>

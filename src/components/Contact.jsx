@@ -2,7 +2,7 @@ import { BsGithub, BsLinkedin, BsTelephoneFill } from "react-icons/bs";
 import { MdEmail, MdLocationOn } from "react-icons/md";
 const Contact = () => {
   return (
-    <section>
+    <section id="contact">
       <div className="bg-amber-50 md:py-8 px-5 mx-auto flex sm:flex-nowrap flex-wrap mt-8 justify-center gap-20">
         <div className="rounded-md space-y-4">
           <div className="text-center space-y-4">

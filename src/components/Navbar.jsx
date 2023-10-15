@@ -1,11 +1,27 @@
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleNavbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const navItems = (
+    <>
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+      <li>
+        <a href="#skills">Skills</a>
+      </li>
+      <li>
+        <a href="#contact">Contact Me</a>
+      </li>
+    </>
+  );
   return (
     <nav>
       <div>
@@ -76,48 +92,7 @@ const Navbar = () => {
               </Link>
             </div>
             <div className="hidden sm:ml-auto sm:block">
-              <ul className="flex space-x-6">
-                <li>
-                  <NavLink
-                    to="/"
-                    className={({ isActive }) =>
-                      isActive ? "current" : "default"
-                    }
-                  >
-                    Home
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/projects"
-                    className={({ isActive }) =>
-                      isActive ? "current" : "default"
-                    }
-                  >
-                    Projects
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/about"
-                    className={({ isActive }) =>
-                      isActive ? "current" : "default"
-                    }
-                  >
-                    About Me
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/blog"
-                    className={({ isActive }) =>
-                      isActive ? "current" : "default"
-                    }
-                  >
-                    Blog
-                  </NavLink>
-                </li>
-              </ul>
+              <ul className="flex space-x-6">{navItems}</ul>
             </div>
           </div>
         </div>
@@ -125,42 +100,7 @@ const Navbar = () => {
 
       {/* <!-- Mobile menu, show/hide based on menu state. --> */}
       <div className="sm:hidden" id="mobile-menu">
-        {isMenuOpen && (
-          <ul className="space-y-1 px-2 pb-3 pt-2">
-            <li>
-              <NavLink
-                to="/"
-                className={({ isActive }) => (isActive ? "current" : "default")}
-              >
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/projects"
-                className={({ isActive }) => (isActive ? "current" : "default")}
-              >
-                Projects
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/about"
-                className={({ isActive }) => (isActive ? "current" : "default")}
-              >
-                About Me
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/blog"
-                className={({ isActive }) => (isActive ? "current" : "default")}
-              >
-                Blog
-              </NavLink>
-            </li>
-          </ul>
-        )}
+        {isMenuOpen && <ul className="space-y-1 px-2 pb-3 pt-2">{navItems}</ul>}
       </div>
     </nav>
   );
